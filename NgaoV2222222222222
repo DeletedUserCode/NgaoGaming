@@ -3535,7 +3535,7 @@ spawn(function()
     while wait(0.1) do
         pcall(function()
             if _G.Fast_Attack then
-                repeat wait(0.1)
+                repeat wait(0.4)
                     AttackNoCD()
                 until not _G.Fast_Attack
             end
