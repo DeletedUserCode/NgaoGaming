@@ -1,3 +1,4 @@
+------------------------------------------------------------------------------------------------------------
 repeat wait() until game:IsLoaded()
 
 	repeat wait()
@@ -2336,9 +2337,9 @@ Type = 1
 spawn(function()
     while wait(.1) do
         if Type == 1 then
-            Farm_Mode = CFrame.new(0,40,0) * CFrame.Angles(0,math.rad(180),math.rad(-180)) --* CFrame.Angles(math.rad(-90),0,0)
+            Farm_Mode = CFrame.new(0,40,0)
         elseif Type == 2 then
-            Farm_Mode = CFrame.new(0,40,0) * CFrame.Angles(0,math.rad(180),math.rad(-180))
+            Farm_Mode = CFrame.new(0,40,0)
         end
     end
 end)
@@ -3535,7 +3536,7 @@ spawn(function()
     while wait(0.1) do
         pcall(function()
             if _G.Fast_Attack then
-                repeat wait(0.4)
+                repeat wait(1)
                     AttackNoCD()
                 until not _G.Fast_Attack
             end
